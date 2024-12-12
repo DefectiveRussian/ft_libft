@@ -6,7 +6,7 @@
 /*   By: dekhamid <dekhamid@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 19:24:02 by dekhamid          #+#    #+#             */
-/*   Updated: 2024/05/19 20:33:29 by dekhamid         ###   ########.fr       */
+/*   Updated: 2024/12/12 16:19:34 by dekhamid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 typedef struct s_list
 {
-	void			*context;
+	void			*content;
 	struct s_list	*next;
 }	t_list;
 

@@ -36,10 +36,20 @@ PT2 :=	ft_itoa.c \
 		ft_strtrim.c \
 		ft_substr.c
 
+BNS	:=	ft_lstnew.c \
+#		ft_lstadd_front \
+#		ft_lstsize \
+#		ft_lstlast \
+#		ft_lstadd_back \
+#		ft_lstdelone \
+#		ft_lstclear \
+#		ft_lstiter \
+#		ft_lstmap \
+
 CFLAGS = -Wall -Werror -Wextra -std=c99
 RM = rm -f
 DEPS = libft.h
-OBJS = $(PT1:.c=.o) $(PT2:.c=.o)
+OBJS = $(PT1:.c=.o) $(PT2:.c=.o) $(BNS:.c=.o)
 
 %.o:%.c
 	@$(CC) -c $(CFLAGS) -I. $< -o $@
